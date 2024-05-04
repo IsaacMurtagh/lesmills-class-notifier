@@ -1,0 +1,43 @@
+# Les Mills Class Notifier
+
+This repository contains a tool that automates the checking of class time availability for Les Mills gym classes. When classes become available based on specified preferences, the tool notifies users via Discord channels through a webhook.
+
+## Features
+
+- **Automated Checking**: Runs a cron job to continuously monitor class availability.
+- **Discord Integration**: Sends notifications directly to specified Discord channels using webhooks.
+- **Custom Preferences**: Users can set preferences for the classes they are interested in.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Docker
+- Discord webhook URL
+
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running:
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/lesmills-class-notifier.git
+   cd lesmills-class-notifier
+   ```
+2. **Set .env values**
+  ```
+  MONDAY_CEREMONY_DISCORD_URL=<your_value>
+  TUESDAY_CEREMONY_DISCORD_URL=<your_value>
+  WEDNESDAY_CEREMONY_DISCORD_URL=<your_value>
+  THURSDAY_CEREMONY_DISCORD_URL=<your_value>
+  FRIDAY_CEREMONY_DISCORD_URL=<your_value>
+  SATURDAY_CEREMONY_DISCORD_URL=<your_value>
+  SUNDAY_CEREMONY_DISCORD_URL=<your_value>
+  ```
+3. **Build and run docker image**
+  ```bash
+  docker build -t lesmills-class-notifier . &&
+  docker run lesmills-class-notifier
+  ```
