@@ -1,30 +1,7 @@
-import ClassConfig from "../src/ClassConfig.js";
 import { getClasses } from "../src/lesmillsClient.js";
+import getClassConfig from "./getClassConfig.js";
 
-const classConfig = ClassConfig.fromJson([
-  {
-    "gym": "Auckland City",
-    "class": "ceremony",
-    "day": "tuesday",
-    "notBefore": "0500",
-    "notAfter": "0630"
-  },
-  {
-    "gym": "Auckland City",
-    "class": "ceremony",
-    "day": "thursday",
-    "notBefore": "0500",
-    "notAfter": "0630"
-  },
-  {
-    "gym": "Auckland City",
-    "class": "ceremony",
-    "day": "saturday",
-    "notBefore": "0800",
-    "notAfter": "0900"
-  }
-])
-
+const classConfig = getClassConfig();
 
 const ceremonyClasses = await getClasses({
   classes: classConfig.classNames,
