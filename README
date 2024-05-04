@@ -23,7 +23,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/yourusername/lesmills-class-notifier.git
+   git clone https://github.com/IsaacMurtagh/lesmills-class-notifier.git
    cd lesmills-class-notifier
    ```
 2. **Set .env values**
@@ -36,8 +36,8 @@ A step-by-step series of examples that tell you how to get a development environ
   SATURDAY_CEREMONY_DISCORD_URL=<your_value>
   SUNDAY_CEREMONY_DISCORD_URL=<your_value>
   ```
-3. **Build and run docker image**
+3. **Build docker image and run container**
   ```bash
   docker build -t lesmills-class-notifier . &&
-  docker run lesmills-class-notifier
+  docker run -d -t lesmills-class-notifier
   ```

@@ -1,3 +1,3 @@
-* * * * * cd /usr/src/app && /usr/local/bin/node --env-file=.env scripts/notifyDiscord >> /var/log/cron.log 2>&1
+*/5 * * * * cd /usr/src/app && /usr/local/bin/node --env-file=.env scripts/notifyDiscord >> /var/log/cron.log 2>&1
 
 # Don't forget to end your cron file with an empty line
