@@ -54,5 +54,11 @@ for(const channel of discordChannels) {
 
   await sendWebhook({ url: channel.webhook, content });
 
-  console.log(`Notifying channel: ${channel.day}\n${content}\n###`)
+  console.log({
+    time: new Date().toISOString(),
+    info: {
+      channel: channel.day,
+      content,
+    }
+  })
 }

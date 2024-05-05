@@ -28,6 +28,7 @@ A step-by-step series of examples that tell you how to get a development environ
    ```
 2. **Set .env values**
   ```
+  HEALTHCHECK_DISCORD_URL=<your_value>
   MONDAY_CEREMONY_DISCORD_URL=<your_value>
   TUESDAY_CEREMONY_DISCORD_URL=<your_value>
   WEDNESDAY_CEREMONY_DISCORD_URL=<your_value>
