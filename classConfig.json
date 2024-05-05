@@ -1,51 +1,79 @@
 [
   {
     "gym": "Auckland City",
+    "class": "conquer",
+    "day": "monday",
+    "notBefore": "0530",
+    "notAfter": "0600"
+  },
+  {
+    "gym": "Auckland City",
     "class": "ceremony",
     "day": "monday",
-    "notBefore": "0500",
-    "notAfter": "0630"
+    "notBefore": "0530",
+    "notAfter": "0600"
+  },
+  {
+    "gym": "Auckland City",
+    "class": "conquer",
+    "day": "tuesday",
+    "notBefore": "0530",
+    "notAfter": "0600"
   },
   {
     "gym": "Auckland City",
     "class": "ceremony",
     "day": "tuesday",
-    "notBefore": "0500",
-    "notAfter": "0630"
+    "notBefore": "0530",
+    "notAfter": "0600"
+  },
+  {
+    "gym": "Auckland City",
+    "class": "conquer",
+    "day": "wednesday",
+    "notBefore": "0530",
+    "notAfter": "0600"
   },
   {
     "gym": "Auckland City",
     "class": "ceremony",
     "day": "wednesday",
-    "notBefore": "0500",
-    "notAfter": "0630"
+    "notBefore": "0530",
+    "notAfter": "0600"
+  },
+  {
+    "gym": "Auckland City",
+    "class": "conquer",
+    "day": "thursday",
+    "notBefore": "0530",
+    "notAfter": "0600"
   },
   {
     "gym": "Auckland City",
     "class": "ceremony",
     "day": "thursday",
-    "notBefore": "0500",
-    "notAfter": "0630"
+    "notBefore": "0530",
+    "notAfter": "0600"
+  },
+  {
+    "gym": "Auckland City",
+    "class": "conquer",
+    "day": "friday",
+    "notBefore": "0530",
+    "notAfter": "0600"
   },
   {
     "gym": "Auckland City",
     "class": "ceremony",
     "day": "friday",
-    "notBefore": "0500",
-    "notAfter": "0630"
+    "notBefore": "0530",
+    "notAfter": "0600"
   },
   {
     "gym": "Auckland City",
     "class": "ceremony",
     "day": "saturday",
-    "notBefore": "0730",
-    "notAfter": "1000"
-  },
-  {
-    "gym": "Auckland City",
-    "class": "ceremony",
-    "day": "sunday",
-    "notBefore": "0730",
-    "notAfter": "1100"
+    "notBefore": "0800",
+    "notAfter": "0830"
   }
 ]

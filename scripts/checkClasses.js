@@ -3,16 +3,18 @@ import getClassConfig from "./getClassConfig.js";
 
 const classConfig = getClassConfig();
 
-const ceremonyClasses = await getClasses({
+const classes = await getClasses({
   classes: classConfig.classNames,
   gyms: classConfig.gyms
 });
 
-const validClasses = ceremonyClasses
+console.log(classConfig.classNames);
+
+const validClasses = classes
   .filter(card => card.assertValid(classConfig))
   .map(c => c.toString());
 
 console.log({ 
-  allClasses: ceremonyClasses.map(c => c.toString()),
+  allClasses: classes.map(c => c.toString()),
   validClasses: validClasses.map(c => c.toString()),
 });

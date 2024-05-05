@@ -4,31 +4,31 @@ import { getClasses } from "../src/lesmillsClient.js";
 
 const discordChannels = [
   {
-    webhook: process.env.MONDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.MONDAY_DISCORD_URL,
     day: 'MONDAY'
   },
   {
-    webhook: process.env.TUESDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.TUESDAY_DISCORD_URL,
     day: 'TUESDAY'
   },
   {
-    webhook: process.env.WEDNESDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.WEDNESDAY_DISCORD_URL,
     day: 'WEDNESDAY'
   },
   {
-    webhook: process.env.THURSDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.THURSDAY_DISCORD_URL,
     day: 'THURSDAY'
   },
   {
-    webhook: process.env.FRIDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.FRIDAY_DISCORD_URL,
     day: 'FRIDAY'
   },
   {
-    webhook: process.env.SATURDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.SATURDAY_DISCORD_URL,
     day: 'SATURDAY'
   },
   {
-    webhook: process.env.SUNDAY_CEREMONY_DISCORD_URL,
+    webhook: process.env.SUNDAY_DISCORD_URL,
     day: 'SUNDAY'
   },
 ]

@@ -6,7 +6,8 @@ const gymCodes = {
   'AUCKLAND CITY': '01'
 }
 const classCodes = {
-  'CEREMONY': '900'
+  'CEREMONY': '900',
+  'CONQUER': '901'
 }
 
 export async function getClasses({ gyms=[], classes=[] }) {
@@ -14,12 +15,13 @@ export async function getClasses({ gyms=[], classes=[] }) {
     'https://www.lesmills.co.nz/API/TimetablePage/GetTimetableCards',
     {
       params: {
-        searchClubCodes: gyms.map(g => gymCodes[g]),
-        searchClassCodes: classes.map(c => classCodes[c]),
+        searchClubCodes: gyms.map(g => gymCodes[g]).join(','),
+        searchClassCodes: classes.map(c => classCodes[c]).join(','),
         searchTrainerNames: '',
       }
     }
   )
+
   return result.data.responseData.cards
     .map(ClassCard.fromApiResponse)
     .sort((c1, c2) => compareAsc(c1.startsAt, c2.startsAt));

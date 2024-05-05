@@ -29,13 +29,13 @@ A step-by-step series of examples that tell you how to get a development environ
 2. **Set .env values**
   ```
   HEALTHCHECK_DISCORD_URL=<your_value>
-  MONDAY_CEREMONY_DISCORD_URL=<your_value>
-  TUESDAY_CEREMONY_DISCORD_URL=<your_value>
-  WEDNESDAY_CEREMONY_DISCORD_URL=<your_value>
-  THURSDAY_CEREMONY_DISCORD_URL=<your_value>
-  FRIDAY_CEREMONY_DISCORD_URL=<your_value>
-  SATURDAY_CEREMONY_DISCORD_URL=<your_value>
-  SUNDAY_CEREMONY_DISCORD_URL=<your_value>
+  MONDAY_DISCORD_URL=<your_value>
+  TUESDAY_DISCORD_URL=<your_value>
+  WEDNESDAY_DISCORD_URL=<your_value>
+  THURSDAY_DISCORD_URL=<your_value>
+  FRIDAY_DISCORD_URL=<your_value>
+  SATURDAY_DISCORD_URL=<your_value>
+  SUNDAY_DISCORD_URL=<your_value>
   ```
 3. **Build docker image and run container**
   ```bash
